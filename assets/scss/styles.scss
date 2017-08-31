@@ -1,0 +1,24 @@
+@import 'var';
+@import 'mixins';
+#title {
+    padding: 30px;
+    color: black;
+    text-align: center;
+}
+
+li {
+    display :flex;
+    list-style: none;
+}
+
+#projects {
+    h1{
+        color: $deepblue;
+        text-align: center;
+        padding: 20px;
+
+    }
+    li {
+        @include grid(4, 2%);
+    }
+}
